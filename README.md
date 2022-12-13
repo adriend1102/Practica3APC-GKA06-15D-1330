@@ -7,9 +7,10 @@ Adrian Vargas Orellana:
 
 
 ## Estructura repositori:
-* **enunciat:** Conte els fitxers amb les instruccions i exemples per fer la practica
-* **0.csv:** Dades obtingudes de la Base de Dades per al signe roca
-* **1.csv:** Dades obtingudes de la Base de Dades per al signe tisores
-* **2.csv:** Dades obtingudes de la Base de Dades per al signe paper
-* **3.csv:** Dades obtingudes de la Base de Dades per al signe ok
-* **Practica2-Classificacio2022GEI-GrupGPA405-1130.ipynb:** Codi desenvolupat
+* **data:** Directorio con la base de datos de las imagenes para entrenar y testear
+* **chinese_mnist.csv:** CSV con los datos par relacionar el nombre suite, sample, code con el valor resultante de la siguiente forma
+
+	-original name (example): Locate{1,3,4}.jpg  
+	-index extracted: suite_id: 1, sample_id: 3, code: 4  
+	-resulted file name: input_1_3_4.jpg 
+* **chinese_mnist.ipynb:** Codi desenvolupat
