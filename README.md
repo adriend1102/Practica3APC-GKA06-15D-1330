@@ -1,12 +1,12 @@
 # Practica3 APC
 
-## Membres del grup:
+## Miembros del grup:
 Adrian Vargas Orellana: 
 * Usuari GitHub: adriend1102
 * Correu: adrian.v.o2002@gmail.com
 
 
-## Estructura repositori:
+## Estructura del repositorio:
 * **data:** Directorio con la base de datos de las imagenes para entrenar y testear
 * **chinese_mnist.csv:** CSV con los datos par relacionar el nombre suite, sample, code con el valor resultante de la siguiente forma
 
@@ -18,3 +18,9 @@ Adrian Vargas Orellana:
 * **PaginaPruebas.html:** Pagina para probar la CNN
 * **Memoria-Practica3APC-GKA06-15D-1330.pdf:** Memoria del proyecto, con ejemplos visuales de los diferentes modelos usados
 * **CHINESE- MNIST.pdf:** Presentacion de PPT del proyecto
+
+
+## Ejecucion de la pagina web:
+1. Ejecutar el programa **chinese_mnist.py** este programa contiene el modelo, se entrenara y ejecutara el servidor para poder usar la pagina web y poder hacer las peticiones web.
+2. Cuando el servidor este levandato: Ejecutar el fichero **PaginaPruebas.html**
+3. Darle uso al canvas para probar el modelo
