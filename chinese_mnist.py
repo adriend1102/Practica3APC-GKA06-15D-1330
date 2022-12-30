@@ -39,8 +39,14 @@ dataset = pd.read_csv('chinese_mnist.csv')
 print("Dimensionalitat de la BBDD:", dataset.shape)
 print("\nTabla de la BBDD:")
 display.display(dataset)
-sortides = dataset['character'].unique()
+sortides = dataset.sort_values('code')['character'].unique()
 print(sortides)
+print(str(sortides[0]))
+print(str(sortides[0]))
+print(sortides[0])
+print(sortides[0])
+print(sortides[0])
+print(sortides[0])
 
 
 
@@ -88,7 +94,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 #clase Callback para limitante
 class myCallback(tf.keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
-        if(logs.get('accuracy') > 1.00):
+        if(logs.get('accuracy') > 0.95):
             print("\nReached 95% accuracy so cancelling training!")
             self.model.stop_training = True
 
@@ -146,8 +152,10 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         #Realizar y obtener la prediccion
         prediction_values = modelCNN.predict(arr)
         prediction = np.argmax(prediction_values)
+        print("Prediccion final: " + str(prediction))
         prediction = sortides[prediction]
         print("Prediccion final: " + prediction)
+
 
         # Regresar respuesta a la peticion HTTP
         self.send_response(200)
