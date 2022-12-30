@@ -13,4 +13,8 @@ Adrian Vargas Orellana:
 	-original name (example): Locate{1,3,4}.jpg  
 	-index extracted: suite_id: 1, sample_id: 3, code: 4  
 	-resulted file name: input_1_3_4.jpg 
-* **chinese_mnist.ipynb:** Codi desenvolupat
+* **chinese_mnist.ipynb:** Codi jupyter desenvolupat
+* **chinese_mnist.py:** Codi python desenvolupat
+* **PaginaPruebas.html:** Pagina para probar la CNN
+* **Memoria-Practica3APC-GKA06-15D-1330.pdf:** Memoria del proyecto, con ejemplos visuales de los diferentes modelos usados
+* **CHINESE- MNIST.pdf:** Presentacion de PPT del proyecto
